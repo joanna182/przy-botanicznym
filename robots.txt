@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://joanna182.github.io/przy-botanicznym/sitemap.xml
