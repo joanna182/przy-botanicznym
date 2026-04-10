@@ -1,0 +1,199 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="csrf-token" content=""><title></title><meta name="description" content="Gabinety psychoterapii - przy botanicznym"><link rel="canonical" href=""><meta property="og:url" content=""><meta property="og:type" content="website"><meta property="og:title" content=""><meta property="og:description" content="Gabinety psychoterapii - przy botanicznym"><link rel="icon" type="image/png" href="https://joanna182.github.io/przy-botanicznym/media/website/1-lf1i3ojwc7.webp"><link rel="apple-touch-icon" sizes="256x256" href="https://joanna182.github.io/przy-botanicznym/media/website/1-lf1i3ojwc7.webp"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://joanna182.github.io/przy-botanicznym/assets/css/ycode-generated.css"><link rel="stylesheet" href="https://joanna182.github.io/przy-botanicznym/assets/css/main.css"><link rel="stylesheet" href="https://joanna182.github.io/przy-botanicznym/assets/css/style.css"><style>:root {
+            --primary-color: #505021;
+            --secondary-color: #3C8363;
+            --bg-section: rgba(80,80,33,0.5);
+            --font-body: 'Inter', sans-serif;
+            --font-headings: 'Basic', sans-serif;
+        }
+        body {
+            font-family: var(--font-body);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-headings);
+        }</style><style>.loader-wrapper {
+            position: relative;
+            min-width: 300px;
+            width: 100%;
+            min-height: 450px;
+        }
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #505021;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        .slots-iframe {
+            min-height: 450px;
+            min-width: 300px;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }</style><style>.chat-wrapper {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .chat-tooltip {
+            background: #333;
+            color: #fff;
+            font-size: 14px;
+            padding: 6px 10px;
+            border-radius: 8px;
+            opacity: 0;
+            transform: translateX(10px);
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+        .chat-button {
+            background-color: #0084FF;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: none;
+            outline: none;
+            text-decoration: none;
+            padding: 0;
+            position: relative;
+        }
+        .chat-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+        .chat-button:focus {
+            outline: none;
+            border: none;
+        }
+        .chat-icon-img {
+            width: 48px;
+            height: 48px;
+            display: block;
+        }
+        .chat-wrapper:hover .chat-tooltip {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        @media (max-width: 480px) {
+            .chat-button { width: 60px; height: 60px; }
+            .chat-icon { width: 30px; height: 30px; }
+            .chat-tooltip { font-size: 12px; padding: 4px 8px; }
+        }</style></head><body class="min-h-[100%] antialiased flex flex-col gap-[8px] font-basic"><nav class="flex-col flex pt-[21px] pb-[21px] md:pt-[32px] md:pb-[32px] rounded-[12px] bg-opacity-[100%] bg-[#ffffff]" data-component-root><div class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px]"><div class="flex flex-row justify-between items-center md:flex-col md:items-stretch md:gap-[40px] gap-[32px]"><div class="flex gap-[20px] items-center justify-between"><a class="flex items-center justify-center" href="https://joanna182.github.io/przy-botanicznym/"><img class="max-w-[100%] object-cover w-[255px] h-[93px]" src="https://joanna182.github.io/przy-botanicznym/media/website/1-lf1i3ojwc7.webp" alt="Psychoterapia Przy Botanicznym"> </a><button type="button" class="md:flex md:items-center md:justify-center hidden mobile-menu-toggle" aria-label="Menu" aria-expanded="false"><i class="block h-[auto] text-opacity-[100%] text-[#9b9b9b] w-[24px]"><svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg></i></button></div><div class="mobile-menu flex flex-row flex-1 items-center md:flex-col md:gap-[24px] md:items-start justify-end gap-[12px]"><a class="flex flex-row items-center justify-center pr-[20px] pl-[20px] border-[1px] border-solid inline-block focus:outline-none font-medium tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px] bg-opacity-[100%] rounded-[9999px] text-opacity-[100%] text-[#000000] bg-[#ffffff] border-[#000000] border-opacity-[10%] text-[14px]" href="https://joanna182.github.io/przy-botanicznym/blog.html" target="_self"><span>Blog</span> </a><a class="flex flex-row items-center justify-center pr-[20px] pl-[20px] border-[1px] border-solid inline-block focus:outline-none font-medium tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px] bg-opacity-[100%] rounded-[9999px] text-opacity-[100%] text-[#000000] bg-[#ffffff] border-[#000000] border-opacity-[10%] text-[14px]" rel="nofollow" target="_blank" href="https://maps.app.goo.gl/9qBLjK8YeSCRusCh6"><span>ul. Żółkiewskiego 36/6, 31-539 Kraków</span></a></div><div class="flex flex-row gap-[12px] sm:justify-center"><a class="flex flex-row items-center justify-center pr-[20px] pl-[20px] border-[1px] border-solid inline-block focus:outline-none font-medium tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px] bg-opacity-[100%] rounded-[9999px] text-opacity-[100%] text-[#000000] bg-[#ffffff] border-[#000000] border-opacity-[10%] text-[14px]" rel="nofollow" href="https://joanna182.github.io/przy-botanicznym/zespol.html"><span>Umów się</span> </a><a class="flex flex-row items-center justify-center text-white pr-[20px] pl-[20px] border-[transparent] border-[1px] border-solid inline-block focus:outline-none font-medium tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px] bg-opacity-[100%] rounded-[9999px] text-[14px]" style="background-color: #505021;" href="tel:+48 690 104 737"><span>+48 690 104 737</span></a></div></div></div></nav><main><section class="pt-[140px] pb-[140px] flex flex-col rounded-[12px] sm:pt-[70px] sm:pb-[70px]" style="background-color: rgba(80,80,33,0.5);"><div class="flex flex-col w-[100%] mr-[auto] ml-[auto] pr-[32px] pl-[32px] max-w-[768px]"><div class="flex flex-col gap-[56px]"><div class="block"><h1 class="tracking-[-0.05em] text-opacity-[100%] text-[#000000] leading-[1.1] md:text-[36px] font-medium text-center text-[36px]">Jak się przygotować do pierwszej sesji z psychoterapeutą? - Psychoterapia Przy Botanicznym</h1></div><div class="flex flex-col gap-[8px] rounded-[20px] bg-opacity-[100%] bg-[#ffffff] p-[32px]"><div class="text-[16px] leading-[1.625em] text-opacity-[100%] text-[#737373]"></div></div><div class="text-center"><a href="https://joanna182.github.io/przy-botanicznym//faq" class="inline-flex items-center justify-center text-white pr-[20px] pl-[20px] border-[transparent] border-[1px] border-solid focus:outline-none font-medium text-[16px] tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px] bg-opacity-[100%] rounded-[9999px]" style="background-color: #505021;">← Wróć do wszystkich pytań</a></div></div></div></section></main><footer class="rounded-[12px] pt-[0px] pb-[0px]" data-component-root style="background-color: rgba(80,80,33,0.5);"><div class="overflow-hidden w-[100%] lg:h-[600px] h-[300px]"><iframe loading="lazy" style="width: 100%; height: 100%; border: 0" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?q=Stanis%C5%82awa+%C5%BB%C3%B3%C5%82kiewskiego+36%2C+Krak%C3%B3w%2C+Poland&amp;zoom=15.5&amp;maptype=roadmap&amp;key=AIzaSyCJPnssAs0x-rN7Nxuz93IK91-QK3boqt0"></iframe></div></footer><footer class="bg-opacity-[100%] bg-[#ffffff] pt-[100px] pb-[100px]" data-component-root><div class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px]"><div class="flex flex-col items-stretch gap-[72px]"><div class="flex flex-row gap-[72px] justify-between md:flex-col"><div class="flex flex-col w-[100%] max-w-[400px] items-start gap-[15px]"><div class="flex items-center justify-center flex-col"><a class="flex flex-row items-center justify-center text-white pr-[20px] pl-[20px] border-[transparent] border-[1px] border-solid inline-block focus:outline-none rounded-[12px] font-medium text-[16px] tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px]" href="https://joanna182.github.io/przy-botanicznym/"><img class="object-cover sm:h-[88px] sm:w-[257px] w-[489px] h-[125px]" src="https://joanna182.github.io/przy-botanicznym/media/website/1-lf1i3ojwc7.webp" alt="Psychoterapia Przy Botanicznym"></a></div><p class="block text-[16px]">Prowadzimy psychoterapię psychodynamiczną popartą badaniami naukowymi. Nasze centrum w Krakowie to profesjonalna przestrzeń dyskrecji i zaufania stworzona specjalnie dla naszych Pacjentów.<br><br>Zapraszamy do klimatyzowanych, przestronnych gabinetów zlokalizowanych pomiędzy Rondem Mogilskim i Grzegórzeckim, tuż przy Ogrodzie Botanicznym UJ, w sercu krakowskiej dzielnicy Grzegórzki.<br><br>Pracujemy na II piętrze, w budynku znajduje się winda i udogodnienia dla osób niepełnosprawnych.<br>Przed budynkiem znajdą Państwo wiele miejsc parkingowych w płatnej strefie parkowania - strefa B.<br><br>Łatwo dojadą do nas Państwo także komunikacją miejską tramwajową i autobusową.</p><a class="text-left overflow-visible flex items-start" rel="nofollow" target="_blank" href="https://maps.app.goo.gl/9qBLjK8YeSCRusCh6"><span class="text-[16px] block">Znajdziesz nas także w</span> <span class="text-[16px] block pl-[4px]" style="color: #505021;">Google Maps</span></a><div class="flex flex-col gap-[20px]"><div class="flex flex-col gap-[4px]"><span class="block font-medium text-opacity-[100%] text-[#000000] text-[30px]">Adres</span> <a class="flex flex-row items-center gap-[5px] justify-start" rel="nofollow" target="_blank" href="https://maps.app.goo.gl/9qBLjK8YeSCRusCh6"><img class="max-w-[100%] object-cover w-[17px] h-[17px]" src="https://joanna182.github.io/przy-botanicznym/assets/images/map-marker-alt-solid.webp" width="32" height="32"><p class="block text-[16px]">ul. Żółkiewskiego 36/6, 31-539 Kraków</p></a></div><div class="flex flex-col gap-[4px]"><span class="block font-medium text-opacity-[100%] text-[#000000] text-[30px]">Kontakt</span> <a class="flex flex-row items-center gap-[5px] justify-start" href="tel:+48 690 104 737"><img class="max-w-[100%] object-cover w-[17px] h-[17px]" src="https://joanna182.github.io/przy-botanicznym/assets/images/phone-solid.webp" width="32" height="32"><p class="block text-[16px]">+48 690 104 737</p></a><a class="flex flex-row items-center gap-[5px] justify-start" href="mailto:recepcja@psychoterapia-przy-botanicznym.pl"><img class="max-w-[100%] object-cover w-[17px] h-[17px]" src="https://joanna182.github.io/przy-botanicznym/assets/images/envelope-solid.webp" width="32" height="32"><p class="block text-[16px]">recepcja@psychoterapia-przy-botanicznym.pl</p></a></div></div></div><div class="grid sm:grid-cols-1 grid-cols-2 flex-1 gap-[32px] max-w-[560px]"><div class="flex flex-col gap-[20px]"><span class="text-[16px] block font-medium text-opacity-[100%] text-[#000000]">Strony</span><div class="flex flex-wrap sm:justify-center sm:gap-y-[20px] justify-start flex-col items-start gap-[20px]"><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/" target="_self">Strona Główna</a></div><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/blog.html" target="_self">Blog</a></div><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/zespol.html" target="_self">Umów się</a></div></div></div><div class="flex flex-col gap-[20px]"><span class="text-[16px] block font-medium text-opacity-[100%] text-[#000000]">Informacje</span><div class="flex flex-wrap sm:justify-center sm:gap-y-[20px] justify-start flex-col items-start gap-[20px]"><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/polityka-prywatnosci.html" target="_self">Polityka Prywatności</a></div><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/regulamin.html" target="_self">Regulamin</a></div></div></div></div></div><hr class="block border-t-[1px] border-[#e4e4e7] border-opacity-[100%]"><div class="flex flex-row gap-[12px] items-center justify-between sm:flex-col sm:gap-[32px]"><span class="text-[12px] block text-center sm:text-center text-[black] text-opacity-[50%]">© 2026 Psychoterapia Przy Botanicznym. Wszelkie prawa zastrzeżone.</span></div></div></div></footer><div class="chat-wrapper"><div class="chat-tooltip">Jesteśmy online</div><a href="https://m.me/823359197521108" target="_blank" class="chat-button" aria-label="Chat na Messengerze"><img src="https://joanna182.github.io/przy-botanicznym/assets/svg/messenger-icon.svg" alt="Messenger" class="chat-icon-img"></a></div><script>function iframeLoaded(suffix) {
+    const loaderElementName = suffix ? `loader-wrapper-${suffix}` : 'loader-wrapper';
+    const slotsElementName = suffix ? `slots-iframe-${suffix}` : 'slots-iframe';
+    const loaderElement = document.getElementById(loaderElementName);
+
+    if (loaderElement) {
+        loaderElement.style.display = 'none';
+    }
+
+    const slotsElement = document.getElementById(slotsElementName);
+
+    if (slotsElement) {
+        slotsElement.style.visibility = 'visible';
+    }
+}</script><style>@media (max-width: 844px) {
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .mobile-menu.is-open {
+        display: flex;
+    }
+    .mobile-menu-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+    }
+}
+@media (min-width: 845px) {
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+    .mobile-menu {
+        display: flex !important;
+    }
+}</style><script>document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', function() {
+            const isOpen = mobileMenu.classList.contains('is-open');
+            mobileMenu.classList.toggle('is-open');
+            menuToggle.setAttribute('aria-expanded', !isOpen);
+        });
+    }
+    
+    // Accordion functionality
+    const accordionHeaders = document.querySelectorAll('[data-accordion-toggle]');
+
+    accordionHeaders.forEach(function(header) {
+        header.style.cursor = 'pointer';
+
+        const targetId = header.getAttribute('data-accordion-target');
+        const content = document.getElementById(targetId);
+        const icon = header.querySelector('[data-accordion-icon]');
+
+        if (content) {
+            // Start with content hidden
+            content.style.display = 'none';
+
+            header.addEventListener('click', function() {
+                const isHidden = content.style.display === 'none';
+
+                // Toggle content
+                content.style.display = isHidden ? 'block' : 'none';
+
+                // Rotate icon
+                if (icon) {
+                    icon.style.transition = 'transform 0.2s ease';
+                    icon.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+                }
+            });
+        }
+    });
+
+    // Read more functionality
+    const readMoreLinks = document.querySelectorAll('[data-readmore-toggle]');
+
+    readMoreLinks.forEach(function(link) {
+        const targetId = link.getAttribute('data-readmore-target');
+        const moreContent = document.getElementById(targetId);
+
+        if (moreContent) {
+            moreContent.style.display = 'none';
+            link.style.cursor = 'pointer';
+
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const isHidden = moreContent.style.display === 'none';
+                moreContent.style.display = isHidden ? 'block' : 'none';
+                link.textContent = isHidden ? 'Czytaj mniej' : 'Czytaj więcej';
+            });
+        }
+    });
+});</script></body></html>

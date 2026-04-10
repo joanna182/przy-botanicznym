@@ -1,7 +1,7 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="csrf-token" content=""><title></title><meta name="description" content="Gabinety psychoterapii - przy botanicznym"><link rel="canonical" href=""><meta property="og:url" content=""><meta property="og:type" content="website"><meta property="og:title" content=""><meta property="og:description" content="Gabinety psychoterapii - przy botanicznym"><link rel="icon" type="image/png" href="https://joanna182.github.io/przy-botanicznym/media/website/1-lf1i3ojwc7.webp"><link rel="apple-touch-icon" sizes="256x256" href="https://joanna182.github.io/przy-botanicznym/media/website/1-lf1i3ojwc7.webp"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://joanna182.github.io/przy-botanicznym/assets/css/ycode-generated.css"><link rel="stylesheet" href="https://joanna182.github.io/przy-botanicznym/assets/css/main.css"><link rel="stylesheet" href="https://joanna182.github.io/przy-botanicznym/assets/css/style.css"><style>:root {
             --primary-color: #505021;
-            --secondary-color: #A8A890;
-            --bg-section: #F5F5F0;
+            --secondary-color: #3C8363;
+            --bg-section: rgba(80,80,33,0.5);
             --font-body: 'Inter', sans-serif;
             --font-headings: 'Basic', sans-serif;
         }
@@ -62,41 +62,446 @@
         .chat-button {
             background-color: #0084FF;
             border-radius: 50%;
-            width: 56px;
-            height: 56px;
+            width: 70px;
+            height: 70px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
             cursor: pointer;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             border: none;
             outline: none;
             text-decoration: none;
             padding: 0;
+            position: relative;
         }
         .chat-button:hover {
             transform: scale(1.1);
-            box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
         }
         .chat-button:focus {
             outline: none;
             border: none;
         }
-        .chat-icon {
-            width: 28px;
-            height: 28px;
-            fill: white;
+        .chat-icon-img {
+            width: 48px;
+            height: 48px;
+            display: block;
         }
         .chat-wrapper:hover .chat-tooltip {
             opacity: 1;
             transform: translateX(0);
         }
         @media (max-width: 480px) {
-            .chat-button { width: 48px; height: 48px; }
-            .chat-icon { width: 24px; height: 24px; }
+            .chat-button { width: 60px; height: 60px; }
+            .chat-icon { width: 30px; height: 30px; }
             .chat-tooltip { font-size: 12px; padding: 4px 8px; }
-        }</style></head><body class="min-h-[100%] antialiased flex flex-col gap-[8px] font-basic"><nav class="flex-col flex pt-[21px] pb-[21px] md:pt-[32px] md:pb-[32px] rounded-[12px] bg-opacity-[100%] bg-[#ffffff]" data-component-root><div class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px]"><div class="flex flex-row justify-between items-center md:flex-col md:items-stretch md:gap-[40px] gap-[32px]"><div class="flex gap-[20px] items-center justify-between"><a class="flex items-center justify-center" href="https://joanna182.github.io/przy-botanicznym/"><img class="max-w-[100%] object-cover w-[255px] h-[93px]" src="https://joanna182.github.io/przy-botanicznym/media/website/1-lf1i3ojwc7.webp" alt="Psychoterapia Przy Botanicznym"> </a><button type="button" class="md:flex md:items-center md:justify-center hidden mobile-menu-toggle" aria-label="Menu" aria-expanded="false"><i class="block h-[auto] text-opacity-[100%] text-[#9b9b9b] w-[24px]"><svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg></i></button></div><div class="mobile-menu flex flex-row flex-1 items-center md:flex-col md:gap-[24px] md:items-start justify-end gap-[12px]"><a class="flex flex-row items-center justify-center pr-[20px] pl-[20px] border-[1px] border-solid inline-block focus:outline-none font-medium tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px] bg-opacity-[100%] rounded-[9999px] text-opacity-[100%] text-[#000000] bg-[#ffffff] border-[#000000] border-opacity-[10%] text-[14px]" href="https://joanna182.github.io/przy-botanicznym/blog.html" target="_self"><span>Blog</span> </a><a class="flex flex-row items-center justify-center pr-[20px] pl-[20px] border-[1px] border-solid inline-block focus:outline-none font-medium tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px] bg-opacity-[100%] rounded-[9999px] text-opacity-[100%] text-[#000000] bg-[#ffffff] border-[#000000] border-opacity-[10%] text-[14px]" rel="nofollow" target="_blank" href="https://maps.app.goo.gl/9qBLjK8YeSCRusCh6"><span>ul. Żółkiewskiego 36/6, 31-539 Kraków</span></a></div><div class="flex flex-row gap-[12px] sm:justify-center"><a class="flex flex-row items-center justify-center pr-[20px] pl-[20px] border-[1px] border-solid inline-block focus:outline-none font-medium tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px] bg-opacity-[100%] rounded-[9999px] text-opacity-[100%] text-[#000000] bg-[#ffffff] border-[#000000] border-opacity-[10%] text-[14px]" rel="nofollow" href="https://joanna182.github.io/przy-botanicznym/zespol.html"><span>Umów się</span> </a><a class="flex flex-row items-center justify-center text-white pr-[20px] pl-[20px] border-[transparent] border-[1px] border-solid inline-block focus:outline-none font-medium tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px] bg-opacity-[100%] rounded-[9999px] text-[14px]" style="background-color: #505021;" href="tel:+48 690 104 737"><span>+48 690 104 737</span></a></div></div></div></nav><main><section class="flex flex-col bg-opacity-[100%] bg-[#000000] relative pb-[0px] rounded-[12px] sm:pt-[64px] pt-[0px] mb-[0px]" data-component-root><div class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px] relative z-[10] pt-[32px] pb-[32px]"><div class="flex flex-row gap-[120px] lg:flex-col lg:gap-[0px] lg:items-stretch justify-start items-start"><div class="max-w-[560px] w-[100%] pt-[56px] lg:pb-[72px] flex flex-col items-start gap-[20px] pb-[56px]"><h1 class="sm:text-[36px] tracking-[-0.05em] text-[60px] leading-[1.1] md:text-[48px] text-opacity-[100%] text-[#ffffff] text-left font-medium block">Centrum psychoterapii przy Botanicznym</h1><p class="text-[#ffffff] text-left text-opacity-[100%] font-medium text-[24px]">Sprawdź wolne terminy do naszych specjalistów</p><a class="border-[transparent] border-[1px] border-solid focus:outline-none font-medium text-[16px] tracking-[-0.025em] leading-[1.5em] bg-opacity-[100%] bg-[#ffffff] text-opacity-[100%] text-[#000000] rounded-[9999px] pt-[20px] pb-[20px] pl-[35px] pr-[35px] flex items-start justify-start flex-row" href="#team"><span><strong class="text-[20px]">Wolne terminy</strong></span></a></div></div></div><div class="block absolute top-[0px] right-[0px] bottom-[0px] left-[0px] overflow-hidden rounded-[12px]" data-component-root><img class="w-[100%] h-[100%] absolute top-[0px] right-[0px] bottom-[0px] left-[0px] object-cover opacity-[50%] rounded-[12px]" src="https://joanna182.github.io/przy-botanicznym/media/website/psychoterapia-przy-botanicznym-krakow-e6ubirhiyz.webp" alt="Hero"></div></section><section class="flex flex-col bg-opacity-[100%] bg-[#ffffff] pt-[45px] pb-[45px]" id="team"><div class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px] sm:pl-[0px] sm:pr-[0px]"><div class="flex flex-col gap-[72px] items-start sm:gap-[32px]"><div class="flex flex-col w-[100%] rounded-[24px] pt-[8px] pb-[8px] pr-[8px] pl-[8px] h-[auto] overflow-visible sm:pl-[4px] sm:pr-[4px]" style="background-color: #F5F5F0;"><h1 class="font-bold sm:text-[20px] block order-first flex-shrink text-center text-[30px]">Wybierz z kalendarza:</h1><div><iframe width="100%" height="500px" style="border: none;" src="https://slots-workers.ppgco.workers.dev/team.html?nextDays=30&fromDate=2025-09-01&teamId=5b3fa425-8e59-4309-82f7-03fcd0ae9a73"></iframe></div></div><div class="static pt-[10px] pl-[10px] block w-[100%] sm:block sm:pl-[0px]"><div class="flex flex-row gap-[12px] rounded-[16px] sm:flex-col" style="background-color: #F5F5F0;"><div class="flex flex-col w-[100%] h-[auto] rounded-[24px] pl-[32px] pr-[32px] pt-[32px] pb-[32px] sm:pl-[16px] sm:pr-[16px]"><div class="flex sm:flex-col sm:items-center sm:justify-center"><div class="flex flex-col justify-center gap-[0px] sm:items-center sm:pb-[15px]"><span class="block text-opacity-[100%] text-[#000000] text-left font-medium text-[24px]">mgr Joanna Worotyńska</span> <span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left"><p>W swojej pracy kieruję się przekonaniem, że każdy człowiek nosi w sobie potencjał do szczęśliwszego i pełnego sensu życia.</p><p>W relacji terapetycznej różnicuję zgłaszane objawy od ADHD i innych wymiarów neuroróżnorodności psychologiczej i dopasowuję swoje interwencje do możliwości i celów Pacjenta.</p><p>Problematyka, którą się zajmuję to:</p><ul><li><p>problemy z nauką i pracą, <strong>przewlekła prokrastynacja</strong>,</p></li><li><p><strong>uczucie pustki</strong> i braku sensu w życiu,</p></li><li><p>uczucie „bycie za szybą" lub brak kontroli nad emocjami (napady złości, płaczu),</p></li><li><p>problemy w znalezieniu partnera życiowego lub <strong>brak satysfakcji w obecnym związku</strong>,</p></li><li><p><strong>depresja</strong> i przewlekły smutek, <strong>napady paniki, GAD</strong> czyli zaburzenie lękowe uogólnione,</p></li><li><p><strong>zaburzenie osobowości borderline, narcystyczne, schizoidalne</strong> itd.</p></li><li><p>utrudnione funkcjonowanie dorosłych dzieci alkoholików <strong>DDA oraz DDD</strong> - czyli dorosłych dzieci z rodzin dysfunkcyjnych.</p></li></ul></span><span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left">Cena za sesję: 200 zł</span></div></div><div class="flex flex-col"></div></div><div class="w-[100%] relative flex"><div class="w-[100%] mr-[auto] ml-[auto] flex gap-[25px] items-start justify-center flex-col h-[100%] min-w-[100%] max-w-[100%] min-h-[100%] max-h-[100%] overflow-auto pl-[5px] pr-[10px]"><span class="text-[16px] block mt-[15px]">Wybierz dogodną godzinę sesji, skontaktujemy się z Tobą, aby ustalić datę spotkania</span><div class="static flex-grow order-none flex-auto sm:flex-shrink h-[100%] w-[100%] max-h-[100%] max-w-[100%] min-w-[auto] min-h-[450px]"></div></div></div></div></div></div></div></section></main><footer class="rounded-[12px] pt-[0px] pb-[0px]" data-component-root style="background-color: #F5F5F0;"><div class="overflow-hidden w-[100%] lg:h-[600px] h-[300px]"><iframe loading="lazy" style="width: 100%; height: 100%; border: 0" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?q=Stanis%C5%82awa+%C5%BB%C3%B3%C5%82kiewskiego+36%2C+Krak%C3%B3w%2C+Poland&amp;zoom=15.5&amp;maptype=roadmap&amp;key=AIzaSyCJPnssAs0x-rN7Nxuz93IK91-QK3boqt0"></iframe></div></footer><footer class="bg-opacity-[100%] bg-[#ffffff] pt-[100px] pb-[100px]" data-component-root><div class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px]"><div class="flex flex-col items-stretch gap-[72px]"><div class="flex flex-row gap-[72px] justify-between md:flex-col"><div class="flex flex-col w-[100%] max-w-[400px] items-start gap-[15px]"><div class="flex items-center justify-center flex-col"><a class="flex flex-row items-center justify-center text-white pr-[20px] pl-[20px] border-[transparent] border-[1px] border-solid inline-block focus:outline-none rounded-[12px] font-medium text-[16px] tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px]" href="https://joanna182.github.io/przy-botanicznym/"><img class="object-cover sm:h-[88px] sm:w-[257px] w-[489px] h-[125px]" src="https://joanna182.github.io/przy-botanicznym/media/website/1-lf1i3ojwc7.webp" alt="Psychoterapia Przy Botanicznym"></a></div><p class="block text-[16px]">Prowadzimy psychoterapię psychodynamiczną popartą badaniami naukowymi. Nasze centrum w Krakowie to profesjonalna przestrzeń dyskrecji i zaufania stworzona specjalnie dla naszych Pacjentów.<br><br>Zapraszamy do klimatyzowanych, przestronnych gabinetów zlokalizowanych pomiędzy Rondem Mogilskim i Grzegórzeckim, tuż przy Ogrodzie Botanicznym UJ, w sercu krakowskiej dzielnicy Grzegórzki.<br><br>Pracujemy na II piętrze, w budynku znajduje się winda i udogodnienia dla osób niepełnosprawnych.<br>Przed budynkiem znajdą Państwo wiele miejsc parkingowych w płatnej strefie parkowania - strefa B.<br><br>Łatwo dojadą do nas Państwo także komunikacją miejską tramwajową i autobusową.</p><a class="text-left overflow-visible flex items-start" rel="nofollow" target="_blank" href="https://maps.app.goo.gl/9qBLjK8YeSCRusCh6"><span class="text-[16px] block">Znajdziesz nas także w</span> <span class="text-[16px] block pl-[4px]" style="color: #505021;">Google Maps</span></a><div class="flex flex-col gap-[20px]"><div class="flex flex-col gap-[4px]"><span class="block font-medium text-opacity-[100%] text-[#000000] text-[30px]">Adres</span> <a class="flex flex-row items-center gap-[5px] justify-start" rel="nofollow" target="_blank" href="https://maps.app.goo.gl/9qBLjK8YeSCRusCh6"><img class="max-w-[100%] object-cover w-[17px] h-[17px]" src="https://joanna182.github.io/przy-botanicznym/assets/images/map-marker-alt-solid.webp" width="32" height="32"><p class="block text-[16px]">ul. Żółkiewskiego 36/6, 31-539 Kraków</p></a></div><div class="flex flex-col gap-[4px]"><span class="block font-medium text-opacity-[100%] text-[#000000] text-[30px]">Kontakt</span> <a class="flex flex-row items-center gap-[5px] justify-start" href="tel:+48 690 104 737"><img class="max-w-[100%] object-cover w-[17px] h-[17px]" src="https://joanna182.github.io/przy-botanicznym/assets/images/phone-solid.webp" width="32" height="32"><p class="block text-[16px]">+48 690 104 737</p></a><a class="flex flex-row items-center gap-[5px] justify-start" href="mailto:recepcja@psychoterapia-przy-botanicznym.pl"><img class="max-w-[100%] object-cover w-[17px] h-[17px]" src="https://joanna182.github.io/przy-botanicznym/assets/images/envelope-solid.webp" width="32" height="32"><p class="block text-[16px]">recepcja@psychoterapia-przy-botanicznym.pl</p></a></div></div></div><div class="grid sm:grid-cols-1 grid-cols-2 flex-1 gap-[32px] max-w-[560px]"><div class="flex flex-col gap-[20px]"><span class="text-[16px] block font-medium text-opacity-[100%] text-[#000000]">Strony</span><div class="flex flex-wrap sm:justify-center sm:gap-y-[20px] justify-start flex-col items-start gap-[20px]"><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/" target="_self">Strona Główna</a></div><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/blog.html" target="_self">Blog</a></div><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/zespol.html" target="_self">Umów się</a></div></div></div><div class="flex flex-col gap-[20px]"><span class="text-[16px] block font-medium text-opacity-[100%] text-[#000000]">Informacje</span><div class="flex flex-wrap sm:justify-center sm:gap-y-[20px] justify-start flex-col items-start gap-[20px]"><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/polityka-prywatnosci.html" target="_self">Polityka Prywatności</a></div><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/regulamin.html" target="_self">Regulamin</a></div></div></div></div></div><hr class="block border-t-[1px] border-[#e4e4e7] border-opacity-[100%]"><div class="flex flex-row gap-[12px] items-center justify-between sm:flex-col sm:gap-[32px]"><span class="text-[12px] block text-center sm:text-center text-[black] text-opacity-[50%]">© 2026 Psychoterapia Przy Botanicznym. Wszelkie prawa zastrzeżone.</span></div></div></div></footer><div class="chat-wrapper"><div class="chat-tooltip">Jesteśmy online</div><a href="https://m.me/823359197521108" target="_blank" class="chat-button" aria-label="Chat na Messengerze"><svg class="chat-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.03 2 11C2 13.36 3.07 15.5 4.86 17.07V21L8.44 18.83C9.27 19.1 10.12 19.24 11 19.24C16.52 19.24 21 15.21 21 10.24C21 5.27 16.52 2 12 2ZM12.91 13.09L10.61 10.74L6.36 13.09L11.08 8.21L13.39 10.56L17.62 8.21L12.91 13.09Z" fill="white"/></svg></a></div><script>function iframeLoaded(suffix) {
+        }</style></head><body class="min-h-[100%] antialiased flex flex-col gap-[8px] font-basic"><nav class="flex-col flex pt-[21px] pb-[21px] md:pt-[32px] md:pb-[32px] rounded-[12px] bg-opacity-[100%] bg-[#ffffff]" data-component-root><div class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px]"><div class="flex flex-row justify-between items-center md:flex-col md:items-stretch md:gap-[40px] gap-[32px]"><div class="flex gap-[20px] items-center justify-between"><a class="flex items-center justify-center" href="https://joanna182.github.io/przy-botanicznym/"><img class="max-w-[100%] object-cover w-[255px] h-[93px]" src="https://joanna182.github.io/przy-botanicznym/media/website/1-lf1i3ojwc7.webp" alt="Psychoterapia Przy Botanicznym"> </a><button type="button" class="md:flex md:items-center md:justify-center hidden mobile-menu-toggle" aria-label="Menu" aria-expanded="false"><i class="block h-[auto] text-opacity-[100%] text-[#9b9b9b] w-[24px]"><svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg></i></button></div><div class="mobile-menu flex flex-row flex-1 items-center md:flex-col md:gap-[24px] md:items-start justify-end gap-[12px]"><a class="flex flex-row items-center justify-center pr-[20px] pl-[20px] border-[1px] border-solid inline-block focus:outline-none font-medium tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px] bg-opacity-[100%] rounded-[9999px] text-opacity-[100%] text-[#000000] bg-[#ffffff] border-[#000000] border-opacity-[10%] text-[14px]" href="https://joanna182.github.io/przy-botanicznym/blog.html" target="_self"><span>Blog</span> </a><a class="flex flex-row items-center justify-center pr-[20px] pl-[20px] border-[1px] border-solid inline-block focus:outline-none font-medium tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px] bg-opacity-[100%] rounded-[9999px] text-opacity-[100%] text-[#000000] bg-[#ffffff] border-[#000000] border-opacity-[10%] text-[14px]" rel="nofollow" target="_blank" href="https://maps.app.goo.gl/9qBLjK8YeSCRusCh6"><span>ul. Żółkiewskiego 36/6, 31-539 Kraków</span></a></div><div class="flex flex-row gap-[12px] sm:justify-center"><a class="flex flex-row items-center justify-center pr-[20px] pl-[20px] border-[1px] border-solid inline-block focus:outline-none font-medium tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px] bg-opacity-[100%] rounded-[9999px] text-opacity-[100%] text-[#000000] bg-[#ffffff] border-[#000000] border-opacity-[10%] text-[14px]" rel="nofollow" href="https://joanna182.github.io/przy-botanicznym/zespol.html"><span>Umów się</span> </a><a class="flex flex-row items-center justify-center text-white pr-[20px] pl-[20px] border-[transparent] border-[1px] border-solid inline-block focus:outline-none font-medium tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px] bg-opacity-[100%] rounded-[9999px] text-[14px]" style="background-color: #505021;" href="tel:+48 690 104 737"><span>+48 690 104 737</span></a></div></div></div></nav><main><section class="flex flex-col bg-opacity-[100%] bg-[#000000] relative pb-[0px] rounded-[12px] sm:pt-[64px] pt-[0px] mb-[0px]" data-component-root><div class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px] relative z-[10] pt-[32px] pb-[32px]"><div class="flex flex-row gap-[120px] lg:flex-col lg:gap-[0px] lg:items-stretch justify-start items-start"><div class="max-w-[560px] w-[100%] pt-[56px] lg:pb-[72px] flex flex-col items-start gap-[20px] pb-[56px]"><h1 class="sm:text-[36px] tracking-[-0.05em] text-[60px] leading-[1.1] md:text-[48px] text-opacity-[100%] text-[#ffffff] text-left font-medium block">Zespół - Psychoterapia Przy Botanicznym</h1><p class="text-[#ffffff] text-left text-opacity-[100%] font-medium text-[24px] pr-[19px]">Poznaj nasz zespół doświadczonych psychoterapeutów</p></div></div></div><div class="block absolute top-[0px] right-[0px] bottom-[0px] left-[0px] overflow-hidden rounded-[12px]" data-component-root><img class="w-[100%] h-[100%] absolute top-[0px] right-[0px] bottom-[0px] left-[0px] object-cover opacity-[50%] rounded-[12px]" src="https://joanna182.github.io/przy-botanicznym/media/website/psychoterapia-przy-botanicznym-krakow-e6ubirhiyz.webp" alt="Hero"></div></section><section class="flex flex-col bg-opacity-[100%] bg-[#ffffff] pt-[45px] pb-[45px]" id="team"><div class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px] sm:pl-[0px] sm:pr-[0px]"><div class="flex flex-col gap-[72px] items-start sm:gap-[32px]"><div class="static pt-[10px] pl-[10px] block w-[100%] sm:block sm:pl-[0px]"><div class="flex flex-row gap-[12px] rounded-[16px] bg-[color:var(--680e245503d0e)] sm:flex-col"><div class="flex flex-col w-[100%] h-[auto] rounded-[24px] pl-[32px] pr-[32px] pt-[32px] pb-[32px] sm:pl-[16px] sm:pr-[16px]"><div class="flex sm:flex-col sm:items-center sm:justify-center"><img class="static transform mr-[20px] mb-[10px] object-cover rounded-[20px] block h-[auto] w-[250px]" src="https://joanna182.github.io/przy-botanicznym/media/website/team-joanna-worotynska.webp" alt="mgr Joanna Worotyńska"><div class="flex flex-col justify-center gap-[0px] sm:items-center sm:pb-[15px]"><span class="block text-opacity-[100%] text-[#000000] text-left font-medium text-[24px]">mgr Joanna Worotyńska</span> <span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left">Psycholog, socjolog, dyplomowana psychoterapeutka psychodynamiczna osób dorosłych</span> <span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left">Cena za sesję: 210 zł zł</span></div></div><div class="flex flex-col mt-[16px]" id="author-bio-wrapper-0"><div id="author-bio-content-0" class="author-bio-text"></div></div><script>(function() {
+                                                var wrapper = document.getElementById('author-bio-wrapper-0');
+                                                var contentEl = document.getElementById('author-bio-content-0');
+                                                var fullBio = `<p class="">W swojej pracy kieruję się przekonaniem, że każdy człowiek nosi w sobie potencjał do szczęśliwszego i pełnego sensu życia.</p>
+<p class="">W relacji terapetycznej różnicuję zgłaszane objawy od ADHD i innych wymiarów neuroróżnorodności psychologiczej i dopasowuję swoje interwencje do możliwości i celów Pacjenta.</p>
+<p class="">Problematyka, którą się zajmuję to:</p>
+<ul>
+<li>
+<p class="">problemy z nauką i pracą, <strong>przewlekła prokrastynacja</strong>,</p>
+</li>
+<li>
+<p class=""><strong>uczucie pustki</strong> i braku sensu w życiu,</p>
+</li>
+<li>
+<p class="">uczucie „bycie za szybą" lub brak kontroli nad emocjami (napady złości, płaczu),</p>
+</li>
+<li>
+<p class="">problemy w znalezieniu partnera życiowego lub <strong>brak satysfakcji w obecnym związku</strong>,</p>
+</li>
+<li>
+<p class=""><strong>depresja</strong> i przewlekły smutek, <strong>napady paniki, GAD</strong> czyli zaburzenie lękowe uogólnione,</p>
+</li>
+<li>
+<p class=""><strong>zaburzenie osobowości borderline, narcystyczne, schizoidalne</strong> itd.</p>
+</li>
+<li>
+<p class="">utrudnione funkcjonowanie dorosłych dzieci alkoholików <strong>DDA oraz DDD</strong> - czyli dorosłych dzieci z rodzin dysfunkcyjnych.</p>
+</li>
+</ul>
+<p>===MORE===</p>
+<p class="">Specjalistyczne 4-letnie szkolenie uprawniające do prowadzenia psychoterapii i przygotowujące do uzyskania Certyfikatu Psychoterapeuty PTP ukończyłam w <a target="_blank" href="https://kcp.com.pl/" rel="noopener">Krakowskim Centrum Psychodynamicznym</a>.</p>
+<p class="">Odbyłam też specjalistyczne szkolenie z <strong>diagnozy ADHD u osób dorosłych</strong> organizowane przez Neuroverse.</p>
+<p class="">Swoje doświadczenie zawodowe jako psycholog i psychoterapeuta zdobywałam m.in. w:</p>
+<ul>
+<li>
+<p class="">Poradni Zdrowia Psychicznego oraz Dziennym Oddziale Psychiatrycznym Scanmed Psyche,</p>
+</li>
+<li>
+<p class="">Całodobowym oddziale psychiatrycznym w Szpitalu Klinicznym im. dra Józefa Babińskiego w Krakowie,</p>
+</li>
+<li>
+<p class="">Oddziale Dziennym Leczenia Nerwic i Zaburzeń Behawioralnych Szpitala Uniwersyteckiego w Krakowie,</p>
+</li>
+<li>
+<p class="">Ośrodku Interwencji Kryzysowej w Krakowie jako dyżurny Telefonu Zaufania.</p>
+</li>
+</ul>
+<p class="">Obecnie pracuję tylko z <strong>Pacjentami dorosłymi</strong>, od 18 roku życia.</p>
+<p class="">Jestem członkiem <strong>Polskiego Towarzystwa Psychoterapii Psychodynamicznej</strong>. W swojej praktyce pracuję zgodnie z Kodeksem etyczno-zawodowym psychologa oraz psychoterapeuty a swoją pracę poddaję regularnej superwizji. </p>`;
+                                                
+                                                // Use ===MORE=== as separator
+                                                var separator = '===MORE===';
+                                                var moreIndex = fullBio.toLowerCase().indexOf(separator.toLowerCase());
+                                                var usedSeparator = separator;
+                                                
+                                                if (moreIndex !== -1) {
+                                                    var shortBio = fullBio.substring(0, moreIndex);
+                                                    var remainingBio = fullBio.substring(moreIndex + usedSeparator.length);
+                                                    
+                                                    // Remove separator from remaining text
+                                                    var cleanRemaining = remainingBio.replace(new RegExp(usedSeparator, 'gi'), '');
+                                                    
+                                                    // Create elements
+                                                    var shortDiv = document.createElement('div');
+                                                    shortDiv.id = 'author-short-0';
+                                                    shortDiv.innerHTML = shortBio;
+                                                    
+                                                    var btn = document.createElement('button');
+                                                    btn.id = 'author-btn-0';
+                                                    btn.className = 'text-[#505021] font-medium underline cursor-pointer mt-[16px] self-start';
+                                                    btn.textContent = 'Czytaj więcej';
+                                                    
+                                                    var fullDiv = document.createElement('div');
+                                                    fullDiv.id = 'author-full-0';
+                                                    fullDiv.style.display = 'none';
+                                                    fullDiv.innerHTML = shortBio + cleanRemaining;
+                                                    
+                                                    contentEl.appendChild(shortDiv);
+                                                    contentEl.appendChild(btn);
+                                                    contentEl.appendChild(fullDiv);
+                                                    
+                                                    var expanded = false;
+                                                    btn.onclick = function() {
+                                                        if (expanded) {
+                                                            shortDiv.style.display = 'block';
+                                                            btn.textContent = 'Czytaj więcej';
+                                                            fullDiv.style.display = 'none';
+                                                        } else {
+                                                            shortDiv.style.display = 'none';
+                                                            btn.textContent = 'Czytaj mniej';
+                                                            fullDiv.style.display = 'block';
+                                                        }
+                                                        expanded = !expanded;
+                                                    };
+                                                } else {
+                                                    contentEl.innerHTML = fullBio;
+                                                }
+                                            })();</script></div><div class="w-[100%] relative flex"><div class="w-[100%] mr-[auto] ml-[auto] flex gap-[25px] items-start justify-center flex-col h-[100%] min-w-[100%] max-w-[100%] min-h-[100%] max-h-[100%] overflow-auto pl-[5px] pr-[10px]"><div class="static flex-grow order-none flex-auto sm:flex-shrink h-[100%] w-[100%] max-h-[100%] max-w-[100%] min-w-[auto] min-h-[450px]"><div id="loader-wrapper-0"><div class="spinner"></div></div><iframe id="slots-iframe-0" class="slots-iframe" src="https://slots-workers.ppgco.workers.dev/calendar.html?nextDays&#x3D;14&amp;fromDate&#x3D;2025-08-15&amp;teamId&#x3D;5b3fa425-8e59-4309-82f7-03fcd0ae9a73&amp;memberId&#x3D;dbcc913a-0b7c-450d-a2b7-ecd359a0d7db" style="visibility:hidden;" onload="iframeLoaded('0')"></iframe></div></div></div></div></div><div class="static pt-[10px] pl-[10px] block w-[100%] sm:block sm:pl-[0px]"><div class="flex flex-row gap-[12px] rounded-[16px] bg-[color:var(--680e245503d0e)] sm:flex-col"><div class="flex flex-col w-[100%] h-[auto] rounded-[24px] pl-[32px] pr-[32px] pt-[32px] pb-[32px] sm:pl-[16px] sm:pr-[16px]"><div class="flex sm:flex-col sm:items-center sm:justify-center"><img class="static transform mr-[20px] mb-[10px] object-cover rounded-[20px] block h-[auto] w-[250px]" src="https://joanna182.github.io/przy-botanicznym/media/website/team-dominika-kaminska-2.webp" alt="mgr Dominika Kamińska"><div class="flex flex-col justify-center gap-[0px] sm:items-center sm:pb-[15px]"><span class="block text-opacity-[100%] text-[#000000] text-left font-medium text-[24px]">mgr Dominika Kamińska</span> <span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left">Psycholog, Psychoterapeuta osób dorosłych w trakcie szkolenia</span> <span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left">Cena za sesję: 200 zł</span></div></div><div class="flex flex-col mt-[16px]" id="author-bio-wrapper-1"><div id="author-bio-content-1" class="author-bio-text"></div></div><script>(function() {
+                                                var wrapper = document.getElementById('author-bio-wrapper-1');
+                                                var contentEl = document.getElementById('author-bio-content-1');
+                                                var fullBio = `<p class="">W swojej pracy terapeutycznej kładę nacisk na bliską, opartą na zaufaniu relację. Skupiam się nie tylko na <strong>usunięciu obecnych objawów i trudności</strong>, ale na wprowadzeniu trwałej zmiany w strukturze osobowości Pacjenta, co owocuje <strong>zmianami na całe życie</strong>.</p>
+<p class="">Prowadzę długoterminową psychoterapię dorosłych.</p>
+<p class="">Jestem psycholożką, w trakcie 4-letniego całościowego szkolenia psychoterapeutycznego w nurcie psychodynamicznym realizowanym w <strong>Krakowskim Centrum Psychodynamicznym</strong> rekomendowanym przez <strong>Polskie Towarzystwo Psychologiczne</strong> oraz <strong>Polskie Towarzystwo Psychoterapii Psychodynamicznej</strong>.</p>
+<p class="">Studia magisterskie ukończyłam na <strong>Uniwersytecie Ignatianum w Krakowie</strong>.</p>
+<p>===MORE===</p>
+<p class="">W swojej pracy korzystam przede wszystkim z modelu <strong>Terapii skoncentrowanej na przeniesieniu (TFP – Transference-Focused Psychoterapy)</strong>.</p>
+<p class="">Doświadczenie zawodowe zdobywałam w Poradni Psychologicznej oraz na Oddziale dziennym leczenia uzależnienia od alkoholu <strong>Unimed</strong>.</p>
+<p class="">Obecnie pracuję także w Centrum Zdrowia Psychicznego przy ulicy Basztowej w Krakowie. Prowadzę długoterminową psychoterapię dorosłych.</p>
+<p class="">Pierwsze spotkania mają charakter konsultacyjny, podczas których dopasowuję odpowiednią potrzebom pacjenta formę pomocy terapeutycznej.</p>
+<p class="">Pracuję zgodnie z Kodeksem etyczno-zawodowym psychologa oraz psychoterapeuty a swoją pracę poddaję regularnej superwizji. </p>`;
+                                                
+                                                // Use ===MORE=== as separator
+                                                var separator = '===MORE===';
+                                                var moreIndex = fullBio.toLowerCase().indexOf(separator.toLowerCase());
+                                                var usedSeparator = separator;
+                                                
+                                                if (moreIndex !== -1) {
+                                                    var shortBio = fullBio.substring(0, moreIndex);
+                                                    var remainingBio = fullBio.substring(moreIndex + usedSeparator.length);
+                                                    
+                                                    // Remove separator from remaining text
+                                                    var cleanRemaining = remainingBio.replace(new RegExp(usedSeparator, 'gi'), '');
+                                                    
+                                                    // Create elements
+                                                    var shortDiv = document.createElement('div');
+                                                    shortDiv.id = 'author-short-1';
+                                                    shortDiv.innerHTML = shortBio;
+                                                    
+                                                    var btn = document.createElement('button');
+                                                    btn.id = 'author-btn-1';
+                                                    btn.className = 'text-[#505021] font-medium underline cursor-pointer mt-[16px] self-start';
+                                                    btn.textContent = 'Czytaj więcej';
+                                                    
+                                                    var fullDiv = document.createElement('div');
+                                                    fullDiv.id = 'author-full-1';
+                                                    fullDiv.style.display = 'none';
+                                                    fullDiv.innerHTML = shortBio + cleanRemaining;
+                                                    
+                                                    contentEl.appendChild(shortDiv);
+                                                    contentEl.appendChild(btn);
+                                                    contentEl.appendChild(fullDiv);
+                                                    
+                                                    var expanded = false;
+                                                    btn.onclick = function() {
+                                                        if (expanded) {
+                                                            shortDiv.style.display = 'block';
+                                                            btn.textContent = 'Czytaj więcej';
+                                                            fullDiv.style.display = 'none';
+                                                        } else {
+                                                            shortDiv.style.display = 'none';
+                                                            btn.textContent = 'Czytaj mniej';
+                                                            fullDiv.style.display = 'block';
+                                                        }
+                                                        expanded = !expanded;
+                                                    };
+                                                } else {
+                                                    contentEl.innerHTML = fullBio;
+                                                }
+                                            })();</script></div><div class="w-[100%] relative flex"><div class="w-[100%] mr-[auto] ml-[auto] flex gap-[25px] items-start justify-center flex-col h-[100%] min-w-[100%] max-w-[100%] min-h-[100%] max-h-[100%] overflow-auto pl-[5px] pr-[10px]"><div class="static flex-grow order-none flex-auto sm:flex-shrink h-[100%] w-[100%] max-h-[100%] max-w-[100%] min-w-[auto] min-h-[450px]"><div id="loader-wrapper-1"><div class="spinner"></div></div><iframe id="slots-iframe-1" class="slots-iframe" src="https://slots-workers.ppgco.workers.dev/calendar.html?nextDays&#x3D;14&amp;fromDate&#x3D;2025-09-15&amp;teamId&#x3D;5b3fa425-8e59-4309-82f7-03fcd0ae9a73&amp;memberId&#x3D;8809a93d-4241-4bc0-883c-b6236b1a7a3d" style="visibility:hidden;" onload="iframeLoaded('1')"></iframe></div></div></div></div></div><div class="static pt-[10px] pl-[10px] block w-[100%] sm:block sm:pl-[0px]"><div class="flex flex-row gap-[12px] rounded-[16px] bg-[color:var(--680e245503d0e)] sm:flex-col"><div class="flex flex-col w-[100%] h-[auto] rounded-[24px] pl-[32px] pr-[32px] pt-[32px] pb-[32px] sm:pl-[16px] sm:pr-[16px]"><div class="flex sm:flex-col sm:items-center sm:justify-center"><img class="static transform mr-[20px] mb-[10px] object-cover rounded-[20px] block h-[auto] w-[250px]" src="https://joanna182.github.io/przy-botanicznym/media/website/team-bogna-bialas.webp" alt="mgr Bogna Białas"><div class="flex flex-col justify-center gap-[0px] sm:items-center sm:pb-[15px]"><span class="block text-opacity-[100%] text-[#000000] text-left font-medium text-[24px]">mgr Bogna Białas</span> <span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left">Psycholog, Psychoterapeuta osób dorosłych w trakcie szkolenia</span> <span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left">Cena za sesję: 200 zł</span></div></div><div class="flex flex-col mt-[16px]" id="author-bio-wrapper-2"><div id="author-bio-content-2" class="author-bio-text"></div></div><script>(function() {
+                                                var wrapper = document.getElementById('author-bio-wrapper-2');
+                                                var contentEl = document.getElementById('author-bio-content-2');
+                                                var fullBio = `<p class="">W swojej pracy szczególną wagę przykładam do tworzenia bezpiecznej relacji terapeutycznej, opartej na autentycznym i bezpośrednim kontakcie. <strong>Tworzę także przestrzeń przyjazną dla osób LGBTQ+.</strong></p>
+<p class="">Jestem psychologiem, <strong>absolwentką Uniwersytetu Jagiellońskiego</strong> oraz psychoterapeutą psychodynamicznym w trakcie szkolenia w <strong>Krakowskim Centrum Psychodynamicznym</strong>.</p>
+<p class="">Pracuję indywidualnie z osobami w kryzysie, zmagającymi się z <strong>depresją, lękiem, problemami relacyjnymi, zaburzeniami osobowości</strong> oraz <strong>DDA (Dorosłymi Dziećmi Alkoholików</strong>).</p>
+<p>===MORE===</p>
+<p class="">Swoje doświadczenie zawodowe zdobywałam w <strong>Poradni Zdrowia Psychicznego</strong> oraz na oddziałach stacjonarnych <strong>Szpitala im. Dr J. Babińskiego w Krakowie</strong> (Oddział Ogólnopsychiatryczny oraz Oddział Psychiatrii Sądowej o Wzmocnionym Zabezpieczeniu).</p>
+<p class="">Pracuję zgodnie z Kodeksem etyczno-zawodowym psychologa oraz psychoterapeuty, a swoją pracę poddaję regularnej superwizji podczas procesów indywidualnych oraz grupowych.</p>`;
+                                                
+                                                // Use ===MORE=== as separator
+                                                var separator = '===MORE===';
+                                                var moreIndex = fullBio.toLowerCase().indexOf(separator.toLowerCase());
+                                                var usedSeparator = separator;
+                                                
+                                                if (moreIndex !== -1) {
+                                                    var shortBio = fullBio.substring(0, moreIndex);
+                                                    var remainingBio = fullBio.substring(moreIndex + usedSeparator.length);
+                                                    
+                                                    // Remove separator from remaining text
+                                                    var cleanRemaining = remainingBio.replace(new RegExp(usedSeparator, 'gi'), '');
+                                                    
+                                                    // Create elements
+                                                    var shortDiv = document.createElement('div');
+                                                    shortDiv.id = 'author-short-2';
+                                                    shortDiv.innerHTML = shortBio;
+                                                    
+                                                    var btn = document.createElement('button');
+                                                    btn.id = 'author-btn-2';
+                                                    btn.className = 'text-[#505021] font-medium underline cursor-pointer mt-[16px] self-start';
+                                                    btn.textContent = 'Czytaj więcej';
+                                                    
+                                                    var fullDiv = document.createElement('div');
+                                                    fullDiv.id = 'author-full-2';
+                                                    fullDiv.style.display = 'none';
+                                                    fullDiv.innerHTML = shortBio + cleanRemaining;
+                                                    
+                                                    contentEl.appendChild(shortDiv);
+                                                    contentEl.appendChild(btn);
+                                                    contentEl.appendChild(fullDiv);
+                                                    
+                                                    var expanded = false;
+                                                    btn.onclick = function() {
+                                                        if (expanded) {
+                                                            shortDiv.style.display = 'block';
+                                                            btn.textContent = 'Czytaj więcej';
+                                                            fullDiv.style.display = 'none';
+                                                        } else {
+                                                            shortDiv.style.display = 'none';
+                                                            btn.textContent = 'Czytaj mniej';
+                                                            fullDiv.style.display = 'block';
+                                                        }
+                                                        expanded = !expanded;
+                                                    };
+                                                } else {
+                                                    contentEl.innerHTML = fullBio;
+                                                }
+                                            })();</script></div><div class="w-[100%] relative flex"><div class="w-[100%] mr-[auto] ml-[auto] flex gap-[25px] items-start justify-center flex-col h-[100%] min-w-[100%] max-w-[100%] min-h-[100%] max-h-[100%] overflow-auto pl-[5px] pr-[10px]"><div class="static flex-grow order-none flex-auto sm:flex-shrink h-[100%] w-[100%] max-h-[100%] max-w-[100%] min-w-[auto] min-h-[450px]"><div id="loader-wrapper-2"><div class="spinner"></div></div><iframe id="slots-iframe-2" class="slots-iframe" src="https://slots-workers.ppgco.workers.dev/calendar.html?nextDays&#x3D;14&amp;fromDate&#x3D;2025-09-15&amp;teamId&#x3D;5b3fa425-8e59-4309-82f7-03fcd0ae9a73&amp;memberId&#x3D;fc08c56c-1c5e-4862-8a66-1f076912b35f" style="visibility:hidden;" onload="iframeLoaded('2')"></iframe></div></div></div></div></div><div class="static pt-[10px] pl-[10px] block w-[100%] sm:block sm:pl-[0px]"><div class="flex flex-row gap-[12px] rounded-[16px] bg-[color:var(--680e245503d0e)] sm:flex-col"><div class="flex flex-col w-[100%] h-[auto] rounded-[24px] pl-[32px] pr-[32px] pt-[32px] pb-[32px] sm:pl-[16px] sm:pr-[16px]"><div class="flex sm:flex-col sm:items-center sm:justify-center"><img class="static transform mr-[20px] mb-[10px] object-cover rounded-[20px] block h-[auto] w-[250px]" src="https://joanna182.github.io/przy-botanicznym/media/website/team-agnieszka-tchon.webp" alt="mgr Agnieszka Tchoń"><div class="flex flex-col justify-center gap-[0px] sm:items-center sm:pb-[15px]"><span class="block text-opacity-[100%] text-[#000000] text-left font-medium text-[24px]">mgr Agnieszka Tchoń</span> <span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left">Pedagog, Psychoterapeuta młodzieży oraz osób dorosłych w trakcie szkolenia</span> <span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left">Cena za sesję: 200 zł</span></div></div><div class="flex flex-col mt-[16px]" id="author-bio-wrapper-3"><div id="author-bio-content-3" class="author-bio-text"></div></div><script>(function() {
+                                                var wrapper = document.getElementById('author-bio-wrapper-3');
+                                                var contentEl = document.getElementById('author-bio-content-3');
+                                                var fullBio = `<p class="">Swoją pracę terapeutyczną kieruję do osób <strong>dorosłych i młodzieży (16-18 lat)</strong>, które doświadczają trudności emocjonalnych, problemów w relacjach i czują, że muszą lepiej zrozumieć siebie, aby poprawić jakość swojego życia.</p>
+<p class="">Jestem <strong>pedagogiem</strong> i <strong>psychoterapeutką w trakcie szkolenia w Krakowskim Centrum Psychodynamicznym</strong>, posiadającym akredytację Polskiego Towarzystwa Psychoterapii Psychodynamicznej i Polskiego Towarzystwa Psychologicznego.</p>
+<p class="">Doświadczenie zawodowe zdobyłam m.in. realizując staż na <strong>Dziennym Oddziale Psychiatrycznym Kraków Nowa Huta Szpitala im. dra Babińskiego</strong> oraz w <strong>Interwencyjnym Ośrodku Wychowawczym</strong>.</p>
+<p class="">Ukończyłam studia podyplomowe z zakresu <strong>interwencji kryzysowej</strong> oraz <strong>pedagogiki resocjalizacyjnej i socjoterapii</strong>.</p>
+<p>===MORE===</p>
+<p class="">W swojej pracy opieram się na uważnej i autentycznej relacji, wierząc, że to właśnie w niej rodzi się przestrzeń do zmiany, refleksji i rozwoju. <strong>Podążam za indywidualnym rytmem każdej osoby</strong>, wspierając ją w dotarciu do głębszych przeżyć, które często pozostają poza codzienną świadomością.</p>
+<p class="">Do gabinetu zapraszam zarówno osoby, które chcą lepiej zrozumieć źródła swoich trudności czy po prostu zatrzymać się i posłuchać siebie.</p>
+<p class="">Pracuję pod stałą superwizją, jestem również członkiem <strong>Polskiego Towarzystwa Psychoterapii Psychodynamicznej</strong>, dbając przez cały czas o jakość i etykę swojej pracy.</p>`;
+                                                
+                                                // Use ===MORE=== as separator
+                                                var separator = '===MORE===';
+                                                var moreIndex = fullBio.toLowerCase().indexOf(separator.toLowerCase());
+                                                var usedSeparator = separator;
+                                                
+                                                if (moreIndex !== -1) {
+                                                    var shortBio = fullBio.substring(0, moreIndex);
+                                                    var remainingBio = fullBio.substring(moreIndex + usedSeparator.length);
+                                                    
+                                                    // Remove separator from remaining text
+                                                    var cleanRemaining = remainingBio.replace(new RegExp(usedSeparator, 'gi'), '');
+                                                    
+                                                    // Create elements
+                                                    var shortDiv = document.createElement('div');
+                                                    shortDiv.id = 'author-short-3';
+                                                    shortDiv.innerHTML = shortBio;
+                                                    
+                                                    var btn = document.createElement('button');
+                                                    btn.id = 'author-btn-3';
+                                                    btn.className = 'text-[#505021] font-medium underline cursor-pointer mt-[16px] self-start';
+                                                    btn.textContent = 'Czytaj więcej';
+                                                    
+                                                    var fullDiv = document.createElement('div');
+                                                    fullDiv.id = 'author-full-3';
+                                                    fullDiv.style.display = 'none';
+                                                    fullDiv.innerHTML = shortBio + cleanRemaining;
+                                                    
+                                                    contentEl.appendChild(shortDiv);
+                                                    contentEl.appendChild(btn);
+                                                    contentEl.appendChild(fullDiv);
+                                                    
+                                                    var expanded = false;
+                                                    btn.onclick = function() {
+                                                        if (expanded) {
+                                                            shortDiv.style.display = 'block';
+                                                            btn.textContent = 'Czytaj więcej';
+                                                            fullDiv.style.display = 'none';
+                                                        } else {
+                                                            shortDiv.style.display = 'none';
+                                                            btn.textContent = 'Czytaj mniej';
+                                                            fullDiv.style.display = 'block';
+                                                        }
+                                                        expanded = !expanded;
+                                                    };
+                                                } else {
+                                                    contentEl.innerHTML = fullBio;
+                                                }
+                                            })();</script></div><div class="w-[100%] relative flex"><div class="w-[100%] mr-[auto] ml-[auto] flex gap-[25px] items-start justify-center flex-col h-[100%] min-w-[100%] max-w-[100%] min-h-[100%] max-h-[100%] overflow-auto pl-[5px] pr-[10px]"><div class="static flex-grow order-none flex-auto sm:flex-shrink h-[100%] w-[100%] max-h-[100%] max-w-[100%] min-w-[auto] min-h-[450px]"><div id="loader-wrapper-3"><div class="spinner"></div></div><iframe id="slots-iframe-3" class="slots-iframe" src="https://slots-workers.ppgco.workers.dev/calendar.html?nextDays&#x3D;14&amp;fromDate&#x3D;2025-09-15&amp;teamId&#x3D;5b3fa425-8e59-4309-82f7-03fcd0ae9a73&amp;memberId&#x3D;e5671ebb-c5ad-461f-8ac6-830cef9080de" style="visibility:hidden;" onload="iframeLoaded('3')"></iframe></div></div></div></div></div><div class="static pt-[10px] pl-[10px] block w-[100%] sm:block sm:pl-[0px]"><div class="flex flex-row gap-[12px] rounded-[16px] bg-[color:var(--680e245503d0e)] sm:flex-col"><div class="flex flex-col w-[100%] h-[auto] rounded-[24px] pl-[32px] pr-[32px] pt-[32px] pb-[32px] sm:pl-[16px] sm:pr-[16px]"><div class="flex sm:flex-col sm:items-center sm:justify-center"><img class="static transform mr-[20px] mb-[10px] object-cover rounded-[20px] block h-[auto] w-[250px]" src="https://joanna182.github.io/przy-botanicznym/media/website/team-szymon-lipnicki.webp" alt="mgr Szymon Lipnicki"><div class="flex flex-col justify-center gap-[0px] sm:items-center sm:pb-[15px]"><span class="block text-opacity-[100%] text-[#000000] text-left font-medium text-[24px]">mgr Szymon Lipnicki</span> <span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left">Psycholog, Psychoterapeuta osób dorosłych w trakcie szkolenia</span> <span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left">Cena za sesję: 200 zł</span></div></div><div class="flex flex-col mt-[16px]" id="author-bio-wrapper-4"><div id="author-bio-content-4" class="author-bio-text"></div></div><script>(function() {
+                                                var wrapper = document.getElementById('author-bio-wrapper-4');
+                                                var contentEl = document.getElementById('author-bio-content-4');
+                                                var fullBio = `<p class="">Towarzyszę Pacjentom w <strong>odkrywaniu i rozumieniu własnych emocji, relacji oraz wewnętrznych doświadczeń</strong>.</p>
+<p class="">Staram się tworzyć atmosferę, w której można być sobą — z tym, co trudne, niepewne czy jeszcze nienazwane. Istotne jest dla mnie <strong>uważne słuchanie i budowanie kontaktu</strong>, który daje poczucie bezpieczeństwa i oparcia.<br><br>Prowadzę <strong>terapię indywidualną osób dorosłych</strong> doświadczających m. in. :</p>
+<ul>
+<li>
+<p class="">kryzysów emocjonalnych,</p>
+</li>
+<li>
+<p class="">trudności decyzyjnych i relacyjnych,</p>
+</li>
+<li>
+<p class="">osób z rozpoznaniem depresji, zaburzeń lękowych czy zaburzeń osobowości.</p>
+</li>
+</ul>
+<p class="">W swojej pracy dbam o to, aby gabinet był miejscem otwartym i bezpiecznym dla osób o różnorodnej tożsamości, światopoglądzie i doświadczeniach życiowych — w tym dla <strong>osób LGBTQ+ oraz osób głęboko religijnych</strong>. <br><br>Jestem <strong>psychologiem ze specjalnością z psychologii klinicznej</strong>, absolwentem Uniwersytetu Ignatianum w Krakowie oraz psychoterapeutą w trakcie specjalistycznego, <strong>4-letniego szkolenia w nurcie psychodynamicznym w Krakowskim Centrum Psychodynamicznym</strong>.</p>
+<p>===MORE===</p>
+<p class="">Doświadczenie zawodowe zdobywałem na <strong>Oddziałach Ogólnopsychiatrycznym oraz Leczenia Zaburzeń i Nerwic w Szpitalu Klinicznym im. dra Józefa Babińskiego</strong> w Krakowie oraz w prywatnym gabinecie. <br><br>Pracuję zgodnie z <strong>Kodeksem etyczno-zawodowym psychologa oraz psychoterapeuty,</strong> swoją pracę poddaję regularnej superwizji indywidualnej i grupowej. Jestem również członkiem <strong>Polskiego Towarzystwa Psychoterapii Psychodynamicznej</strong>.</p>`;
+                                                
+                                                // Use ===MORE=== as separator
+                                                var separator = '===MORE===';
+                                                var moreIndex = fullBio.toLowerCase().indexOf(separator.toLowerCase());
+                                                var usedSeparator = separator;
+                                                
+                                                if (moreIndex !== -1) {
+                                                    var shortBio = fullBio.substring(0, moreIndex);
+                                                    var remainingBio = fullBio.substring(moreIndex + usedSeparator.length);
+                                                    
+                                                    // Remove separator from remaining text
+                                                    var cleanRemaining = remainingBio.replace(new RegExp(usedSeparator, 'gi'), '');
+                                                    
+                                                    // Create elements
+                                                    var shortDiv = document.createElement('div');
+                                                    shortDiv.id = 'author-short-4';
+                                                    shortDiv.innerHTML = shortBio;
+                                                    
+                                                    var btn = document.createElement('button');
+                                                    btn.id = 'author-btn-4';
+                                                    btn.className = 'text-[#505021] font-medium underline cursor-pointer mt-[16px] self-start';
+                                                    btn.textContent = 'Czytaj więcej';
+                                                    
+                                                    var fullDiv = document.createElement('div');
+                                                    fullDiv.id = 'author-full-4';
+                                                    fullDiv.style.display = 'none';
+                                                    fullDiv.innerHTML = shortBio + cleanRemaining;
+                                                    
+                                                    contentEl.appendChild(shortDiv);
+                                                    contentEl.appendChild(btn);
+                                                    contentEl.appendChild(fullDiv);
+                                                    
+                                                    var expanded = false;
+                                                    btn.onclick = function() {
+                                                        if (expanded) {
+                                                            shortDiv.style.display = 'block';
+                                                            btn.textContent = 'Czytaj więcej';
+                                                            fullDiv.style.display = 'none';
+                                                        } else {
+                                                            shortDiv.style.display = 'none';
+                                                            btn.textContent = 'Czytaj mniej';
+                                                            fullDiv.style.display = 'block';
+                                                        }
+                                                        expanded = !expanded;
+                                                    };
+                                                } else {
+                                                    contentEl.innerHTML = fullBio;
+                                                }
+                                            })();</script></div><div class="w-[100%] relative flex"><div class="w-[100%] mr-[auto] ml-[auto] flex gap-[25px] items-start justify-center flex-col h-[100%] min-w-[100%] max-w-[100%] min-h-[100%] max-h-[100%] overflow-auto pl-[5px] pr-[10px]"><div class="static flex-grow order-none flex-auto sm:flex-shrink h-[100%] w-[100%] max-h-[100%] max-w-[100%] min-w-[auto] min-h-[450px]"><div id="loader-wrapper-4"><div class="spinner"></div></div><iframe id="slots-iframe-4" class="slots-iframe" src="https://slots-workers.ppgco.workers.dev/calendar.html?nextDays&#x3D;14&amp;fromDate&#x3D;2025-09-15&amp;teamId&#x3D;5b3fa425-8e59-4309-82f7-03fcd0ae9a73&amp;memberId&#x3D;7d4f00f5-4ca2-44bc-81f5-8096ea204a5b" style="visibility:hidden;" onload="iframeLoaded('4')"></iframe></div></div></div></div></div><div class="static pt-[10px] pl-[10px] block w-[100%] sm:block sm:pl-[0px]"><div class="flex flex-row gap-[12px] rounded-[16px] bg-[color:var(--680e245503d0e)] sm:flex-col"><div class="flex flex-col w-[100%] h-[auto] rounded-[24px] pl-[32px] pr-[32px] pt-[32px] pb-[32px] sm:pl-[16px] sm:pr-[16px]"><div class="flex sm:flex-col sm:items-center sm:justify-center"><img class="static transform mr-[20px] mb-[10px] object-cover rounded-[20px] block h-[auto] w-[250px]" src="https://joanna182.github.io/przy-botanicznym/media/website/team-joanna-cora.webp" alt="mgr Joanna Cora"><div class="flex flex-col justify-center gap-[0px] sm:items-center sm:pb-[15px]"><span class="block text-opacity-[100%] text-[#000000] text-left font-medium text-[24px]">mgr Joanna Cora</span> <span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left">Psycholog, dyplomowany psychoterapeuta osób dorosłych</span> <span class="block text-[#000000] font-normal text-opacity-[60%] text-[14px] text-left">Cena za sesję: 210 zł</span></div></div><div class="flex flex-col mt-[16px]" id="author-bio-wrapper-5"><div id="author-bio-content-5" class="author-bio-text"></div></div><script>(function() {
+                                                var wrapper = document.getElementById('author-bio-wrapper-5');
+                                                var contentEl = document.getElementById('author-bio-content-5');
+                                                var fullBio = `<p class="">W swojej pracy terapeutycznej tworzę przestrzeń do przyglądania się temu, co w życiu psychicznym bywa <strong>trudne, niejasne lub powtarzalne</strong>. </p>
+<p class="">Poprzez zrozumienie <strong>emocji, wewnętrznych konfliktów i powtarzających się negatywnych wzorców w relacjach </strong>pomagam zgłaszającym się do mnie osobom w uzyskaniu większej swobody w przeżywaniu siebie i budowaniu bliskości z innymi. </p>
+<p class="">Pracuję z <strong>osobami dorosłymi</strong>, które:</p>
+<p class="">•doświadczają obniżonego nastroju lub depresji,</p>
+<p class="">•zmagają się ze <strong>stresem</strong>, <strong>przeciążeniem psychicznym czy napięciem</strong> utrudniającym codzienne funkcjonowanie,</p>
+<p class="">•doświadczają lęku i trudności w codziennych w relacjach,</p>
+<p class="">• cierpią z powodu zaburzeń osobowości.</p>
+<p>===MORE===</p>
+<p class="">Ukończyłam <strong>studia magisterskie z Psychologii Stosowanej na Uniwersytecie Jagiellońskim</strong> oraz całościowe, czteroletnie szkolenie psychoterapeutyczne w <strong>Krakowskim Centrum Psychodynamicznym</strong>.</p>
+<p class="">Obecnie pracuję również w <strong>Centrum Zdrowia Psychicznego Kraków–Podgórze</strong>, działającym przy Szpitalu im. dra Babińskiego, gdzie zajmuję się psychoterapią indywidualną oraz diagnozą psychologiczną w ramach NFZ.</p>
+<p class="">Doświadczenie zawodowe zdobywałam m.in. podczas stażu na oddziale stacjonarnym Szpitala im. dr. Józefa Babińskiego w Krakowie. Pracowałam również na <strong>Psychiatrycznych Oddziałach Dziennych</strong>, gdzie prowadziłam procesy psychoterapii indywidualnej oraz psychoterapii grupowej. </p>
+<p class="">Jestem członkiem <strong>Polskiego Towarzystwa Psychoterapii Psychodynamicznej.</strong> Swoją pracę regularnie poddaję superwizji. Na co dzień kieruję się zasadami etyki zawodowej, dbając o bezpieczeństwo, poufność i komfort osób korzystających z psychoterapii.</p>`;
+                                                
+                                                // Use ===MORE=== as separator
+                                                var separator = '===MORE===';
+                                                var moreIndex = fullBio.toLowerCase().indexOf(separator.toLowerCase());
+                                                var usedSeparator = separator;
+                                                
+                                                if (moreIndex !== -1) {
+                                                    var shortBio = fullBio.substring(0, moreIndex);
+                                                    var remainingBio = fullBio.substring(moreIndex + usedSeparator.length);
+                                                    
+                                                    // Remove separator from remaining text
+                                                    var cleanRemaining = remainingBio.replace(new RegExp(usedSeparator, 'gi'), '');
+                                                    
+                                                    // Create elements
+                                                    var shortDiv = document.createElement('div');
+                                                    shortDiv.id = 'author-short-5';
+                                                    shortDiv.innerHTML = shortBio;
+                                                    
+                                                    var btn = document.createElement('button');
+                                                    btn.id = 'author-btn-5';
+                                                    btn.className = 'text-[#505021] font-medium underline cursor-pointer mt-[16px] self-start';
+                                                    btn.textContent = 'Czytaj więcej';
+                                                    
+                                                    var fullDiv = document.createElement('div');
+                                                    fullDiv.id = 'author-full-5';
+                                                    fullDiv.style.display = 'none';
+                                                    fullDiv.innerHTML = shortBio + cleanRemaining;
+                                                    
+                                                    contentEl.appendChild(shortDiv);
+                                                    contentEl.appendChild(btn);
+                                                    contentEl.appendChild(fullDiv);
+                                                    
+                                                    var expanded = false;
+                                                    btn.onclick = function() {
+                                                        if (expanded) {
+                                                            shortDiv.style.display = 'block';
+                                                            btn.textContent = 'Czytaj więcej';
+                                                            fullDiv.style.display = 'none';
+                                                        } else {
+                                                            shortDiv.style.display = 'none';
+                                                            btn.textContent = 'Czytaj mniej';
+                                                            fullDiv.style.display = 'block';
+                                                        }
+                                                        expanded = !expanded;
+                                                    };
+                                                } else {
+                                                    contentEl.innerHTML = fullBio;
+                                                }
+                                            })();</script></div><div class="w-[100%] relative flex"><div class="w-[100%] mr-[auto] ml-[auto] flex gap-[25px] items-start justify-center flex-col h-[100%] min-w-[100%] max-w-[100%] min-h-[100%] max-h-[100%] overflow-auto pl-[5px] pr-[10px]"><div class="static flex-grow order-none flex-auto sm:flex-shrink h-[100%] w-[100%] max-h-[100%] max-w-[100%] min-w-[auto] min-h-[450px]"><div id="loader-wrapper-5"><div class="spinner"></div></div><iframe id="slots-iframe-5" class="slots-iframe" src="https://slots-workers.ppgco.workers.dev/calendar.html?teamId&#x3D;5b3fa425-8e59-4309-82f7-03fcd0ae9a73&amp;memberId&#x3D;c84eb009-280c-42f9-9669-3ee5a8c59d84" style="visibility:hidden;" onload="iframeLoaded('5')"></iframe></div></div></div></div></div></div></div></section></main><footer class="rounded-[12px] pt-[0px] pb-[0px]" data-component-root style="background-color: rgba(80,80,33,0.5);"><div class="overflow-hidden w-[100%] lg:h-[600px] h-[300px]"><iframe loading="lazy" style="width: 100%; height: 100%; border: 0" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?q=Stanis%C5%82awa+%C5%BB%C3%B3%C5%82kiewskiego+36%2C+Krak%C3%B3w%2C+Poland&amp;zoom=15.5&amp;maptype=roadmap&amp;key=AIzaSyCJPnssAs0x-rN7Nxuz93IK91-QK3boqt0"></iframe></div></footer><footer class="bg-opacity-[100%] bg-[#ffffff] pt-[100px] pb-[100px]" data-component-root><div class="flex flex-col w-[100%] max-w-[1280px] mr-[auto] ml-[auto] pr-[32px] pl-[32px]"><div class="flex flex-col items-stretch gap-[72px]"><div class="flex flex-row gap-[72px] justify-between md:flex-col"><div class="flex flex-col w-[100%] max-w-[400px] items-start gap-[15px]"><div class="flex items-center justify-center flex-col"><a class="flex flex-row items-center justify-center text-white pr-[20px] pl-[20px] border-[transparent] border-[1px] border-solid inline-block focus:outline-none rounded-[12px] font-medium text-[16px] tracking-[-0.025em] leading-[1.5em] pt-[10px] pb-[10px]" href="https://joanna182.github.io/przy-botanicznym/"><img class="object-cover sm:h-[88px] sm:w-[257px] w-[489px] h-[125px]" src="https://joanna182.github.io/przy-botanicznym/media/website/1-lf1i3ojwc7.webp" alt="Psychoterapia Przy Botanicznym"></a></div><p class="block text-[16px]">Prowadzimy psychoterapię psychodynamiczną popartą badaniami naukowymi. Nasze centrum w Krakowie to profesjonalna przestrzeń dyskrecji i zaufania stworzona specjalnie dla naszych Pacjentów.<br><br>Zapraszamy do klimatyzowanych, przestronnych gabinetów zlokalizowanych pomiędzy Rondem Mogilskim i Grzegórzeckim, tuż przy Ogrodzie Botanicznym UJ, w sercu krakowskiej dzielnicy Grzegórzki.<br><br>Pracujemy na II piętrze, w budynku znajduje się winda i udogodnienia dla osób niepełnosprawnych.<br>Przed budynkiem znajdą Państwo wiele miejsc parkingowych w płatnej strefie parkowania - strefa B.<br><br>Łatwo dojadą do nas Państwo także komunikacją miejską tramwajową i autobusową.</p><a class="text-left overflow-visible flex items-start" rel="nofollow" target="_blank" href="https://maps.app.goo.gl/9qBLjK8YeSCRusCh6"><span class="text-[16px] block">Znajdziesz nas także w</span> <span class="text-[16px] block pl-[4px]" style="color: #505021;">Google Maps</span></a><div class="flex flex-col gap-[20px]"><div class="flex flex-col gap-[4px]"><span class="block font-medium text-opacity-[100%] text-[#000000] text-[30px]">Adres</span> <a class="flex flex-row items-center gap-[5px] justify-start" rel="nofollow" target="_blank" href="https://maps.app.goo.gl/9qBLjK8YeSCRusCh6"><img class="max-w-[100%] object-cover w-[17px] h-[17px]" src="https://joanna182.github.io/przy-botanicznym/assets/images/map-marker-alt-solid.webp" width="32" height="32"><p class="block text-[16px]">ul. Żółkiewskiego 36/6, 31-539 Kraków</p></a></div><div class="flex flex-col gap-[4px]"><span class="block font-medium text-opacity-[100%] text-[#000000] text-[30px]">Kontakt</span> <a class="flex flex-row items-center gap-[5px] justify-start" href="tel:+48 690 104 737"><img class="max-w-[100%] object-cover w-[17px] h-[17px]" src="https://joanna182.github.io/przy-botanicznym/assets/images/phone-solid.webp" width="32" height="32"><p class="block text-[16px]">+48 690 104 737</p></a><a class="flex flex-row items-center gap-[5px] justify-start" href="mailto:recepcja@psychoterapia-przy-botanicznym.pl"><img class="max-w-[100%] object-cover w-[17px] h-[17px]" src="https://joanna182.github.io/przy-botanicznym/assets/images/envelope-solid.webp" width="32" height="32"><p class="block text-[16px]">recepcja@psychoterapia-przy-botanicznym.pl</p></a></div></div></div><div class="grid sm:grid-cols-1 grid-cols-2 flex-1 gap-[32px] max-w-[560px]"><div class="flex flex-col gap-[20px]"><span class="text-[16px] block font-medium text-opacity-[100%] text-[#000000]">Strony</span><div class="flex flex-wrap sm:justify-center sm:gap-y-[20px] justify-start flex-col items-start gap-[20px]"><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/" target="_self">Strona Główna</a></div><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/blog.html" target="_self">Blog</a></div><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/zespol.html" target="_self">Umów się</a></div></div></div><div class="flex flex-col gap-[20px]"><span class="text-[16px] block font-medium text-opacity-[100%] text-[#000000]">Informacje</span><div class="flex flex-wrap sm:justify-center sm:gap-y-[20px] justify-start flex-col items-start gap-[20px]"><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/polityka-prywatnosci.html" target="_self">Polityka Prywatności</a></div><div class="flex items-center flex-wrap flex-row sm:justify-center sm:gap-y-[20px] gap-[40px] justify-start"><a class="no-underline focus:outline-none tracking-[-0.025em] text-[16px] text-opacity-[100%] text-[#737373] font-normal" href="https://joanna182.github.io/przy-botanicznym/regulamin.html" target="_self">Regulamin</a></div></div></div></div></div><hr class="block border-t-[1px] border-[#e4e4e7] border-opacity-[100%]"><div class="flex flex-row gap-[12px] items-center justify-between sm:flex-col sm:gap-[32px]"><span class="text-[12px] block text-center sm:text-center text-[black] text-opacity-[50%]">© 2026 Psychoterapia Przy Botanicznym. Wszelkie prawa zastrzeżone.</span></div></div></div></footer><div class="chat-wrapper"><div class="chat-tooltip">Jesteśmy online</div><a href="https://m.me/823359197521108" target="_blank" class="chat-button" aria-label="Chat na Messengerze"><img src="https://joanna182.github.io/przy-botanicznym/assets/svg/messenger-icon.svg" alt="Messenger" class="chat-icon-img"></a></div><script>function iframeLoaded(suffix) {
     const loaderElementName = suffix ? `loader-wrapper-${suffix}` : 'loader-wrapper';
     const slotsElementName = suffix ? `slots-iframe-${suffix}` : 'slots-iframe';
     const loaderElement = document.getElementById(loaderElementName);
